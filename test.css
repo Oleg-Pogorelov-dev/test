@@ -1,37 +1,42 @@
 .body {
+	position: absolute;
 	background-color: white;
-	width: 960px;
+	max-width: 960px;
 	min-height:100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
+.top {
+	display: flex;
+	flex-direction: column;
+}
+
 .header {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	align-self: flex-start;
 	width: 100%;
 }
 
 .header__block-1 {
 	height: 110px;
-	width: 130px;
+	flex: 1 1 130px;
 	margin-right: 20px;
 }
 
 .header__block-2 {
 	background-color: grey;
 	height: 110px;
-	width: 300px;
+	flex: 1 1 300px;
 	margin-right: 20px;
 }
 
 .header__block-3 {
 	background-color: grey;
 	height: 110px;
-	width: 490px;
+	flex: 1 1 490px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -70,7 +75,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
-	width: 20%;
+	width: 180px;
 }
 
 .left__block {
@@ -89,7 +94,7 @@
 .center {
 	display: flex;
 	flex-direction: column;
-	max-width: 80%;
+	flex: 1 0;
 }
 
 .center__block-1 {
@@ -151,22 +156,24 @@
 .footer__left {
 	padding: 10px;
 	margin: 0;
+	margin-right: 20px;
 	background-color: grey;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	width: 30%;
+	flex: 1 1 100px;
 	height: 76%;
 	list-style-type: none;
 }
 
 .footer__center {
 	margin: 0;
+	margin-right: 20px;
 	padding: 10px;
 	background-color: grey;
 	display: flex;
 	flex-direction: column;
-	width: 30%;
+	flex: 1 1 100px;
 	height: 76%;
 	list-style-type: square;
 }
@@ -184,7 +191,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 32%;
+	flex: 1 1 100px;
 	height: 84%;
 }
 
@@ -207,7 +214,7 @@
 	width: 100%;
 }
 
-@media (max-width: 1200px) {
+/*@media (max-width: 1200px) {
 	.body-position {
 		padding: 20px 0;
 	}
@@ -215,7 +222,7 @@
 		justify-content: flex-start;
 	}
 	.center {
-		max-width: 60%;
+		flex-shrink: 1;
 	}
 }
 
@@ -227,7 +234,7 @@
 		justify-content: flex-start;
 	}
 	.center {
-		max-width: 40%;
+		flex-shrink: 2;
 	}
 }
 
@@ -239,7 +246,7 @@
 		justify-content: flex-start;
 	}
 	.center {
-		max-width: 40%;
+		flex-shrink: 3;
 	}
 }
 
@@ -251,7 +258,7 @@
 		justify-content: flex-start;
 	}
 	.center {
-		max-width: 30%;
+		flex-shrink: 4;
 		word-break: break-all;
 	}
-}
+}*/
